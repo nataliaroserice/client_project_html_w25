@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UMSI Student Success Portal: Your guide to academic, mental, and physical resources at the University of Michigan.">
-    <title>UMSI Student Success Portal</title>
+    <meta name="description" content="UMSI Student Success Portal: Your comprehensive guide to resources designed to help you succeed academically, maintain balance, and find support at the University of Michigan.">
+    <title>Welcome to the UMSI Student Success Portal!</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
-<body>
 
-    <header>
+<body>
+    <header id="header">
         <a href = "#main" class="skip">Skip to Main Content</a>
         <br>
-        <img src="images/UMSI_logo.png" alt="UMSI Logo" width="200">
+        <img src="images/ssp-logo.png" alt="UMSI Logo" width="auto" class="logo">
         <nav>
             <ul>
                 <li class="active"><a href = "index.html">Home</a></li>
@@ -20,45 +22,69 @@
                 <li><a href = "cew+.html">CEW+</a></li>
             </ul>
         </nav>
-        <h1>UMSI Student Success Portal</h1>
     </header>
 
     <main id="main">
-
-        <section>
-            <img src="images/student_backpack.jpg" alt="Student wearing a gray UMSI backback" width="400">
-            <h2>Welcome to the UMSI Student Success Portal!</h2>
-            <p>Your comprehensive guide to resources designed to help you succeed academically, maintain balance, and find support when needed.</p>
+        <section class="hero">
+            <!-- <img src="images/student_backpack.jpg" alt="Student wearing a gray UMSI backback" width="400"> -->
+            <div class="hero-text">
+            <h1>Welcome to the UMSI Student Success Portal!</h1>
+            <p>Your comprehensive guide to resources designed to help you succeed academically, maintain balance, and find support at the University of Michigan.</p>
+            <!-- <br>
             <p>Explore resources across key areas:</p>
-            <ul>
+            <ul class="resource-links">
                 <li><a href="caps.html">Mental Health</a></li>
                 <li><a href="mbc.html">Physical Health and Nutrition</a></li>
                 <li><a href="cew.html">Academic and Professional Development</a></li>
             </ul>
+            </div> -->
         </section>
 
-        <section>
-            <img src="images/students_talking_small.jpeg" alt="Two students talking while sitting" height="300">
+        <br>
+
+        <!-- Featured Resources Section -->
+
+        <section class="featured-resources">
             <h2>Featured Resources</h2>
-            <article>
-                <h3>Counseling and Psychological Services (CAPS)</h3>
-                <p>Access counseling, group therapy, and crisis support to maintain your mental well-being. <a href="caps.html">Learn more about CAPS</a>.</p>
-            </article>
+            <br>
+            <div class="resource-grid">
 
-            <article>
-                <h3>Maize and Blue Cupboard</h3>
-                <p>Address food insecurity and learn about nutritious eating. <a href="maize_and_blue.html"> Discover the Maize and Blue Cupboard</a></p>
-            </article>
+                <article class="resource-card">
+                    <img src="images/students_studying.jpeg" alt="Students studying in a great hall">
+                    <div class="resource-content">
+                        <h3><a href="caps.html" class="header-link"></a>Counseling and Psychological Services (CAPS)</a></h3>
+                        <br>
+                        <p>Access counseling, group therapy, and crisis support to maintain your mental well-being.</p>
+                        <br>
+                        <p><a href="caps.html" class="learn-more">Learn more about CAPS</a></p>
+                    </div>
+                </article>
 
-            <article>
-                <h3>Center for the Education of Women+ (CEW+)</h3>
-                <p>Find scholarships, workshops, and counseling tailored for diverse students. <a href="cew+.html">Explore CEW+ resources</a>.</p>
-            </article>
+                <article class="resource-card">
+                    <img src="images/mab.jpg" alt="Interior of Maize and Blue Cupboard"> 
+                    <div class="resource-content">
+                        <h3>Maize and Blue Cupboard</h3>
+                        <br>
+                        <p>Address food insecurity and learn about nutritious eating.</p>
+                        <br>
+                        <p><a href="maize_and_blue.html" class="learn-more"> Discover the Maize and Blue Cupboard</a></p>
+                    </div>
+                </article>
 
+                <article class="resource-card">
+                    <img img src="images/cew+.png" alt="Two students wearing graduation caps">
+                    <div class="resource-content">
+                        <h3>Center for the Education of Women+ (CEW+)</h3>
+                        <br>
+                        <p>Find scholarships, workshops, and counseling tailored for diverse students.</p>
+                        <br>
+                        <p><a href="cew+.html" class="learn-more">Explore CEW+ resources</a></p>
+                    </div>
+                </article>
+            </div>
             </section>
 
-            
-            <section>
+            <!-- <section>
                 <img src="images/liberty_mural.jpg" alt="a mural in Downtown Ann Arbor" width="300">
                 <h2> Life Outside the Classroom</h2>
                 <p>Balance your academic life with engaging extracurricular activities, community involvement, and personal development opportunities.</p>
@@ -68,7 +94,7 @@
                 <li><strong>Career Services:</strong> Prepare for your future with expert guidance.</li>
                 <li><strong>Housing and Dining:</strong> Access comfortable living and dining options.</li>
             </ul>
-        </section>
+        </section> -->
     </main>
           
     <footer>
