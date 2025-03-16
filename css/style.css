@@ -55,24 +55,24 @@ h3 {
 }
 
 /* Nav Bar */
-nav {
+.header nav {
     background-color: #00274C;
     padding: 15px 0;
     text-align: center;
 }
 
-nav ul {
+.header nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
+.header nav ul li {
     display: inline-block;
     margin-right: 15px;
     padding: 12px 22px;
 }
 
-nav ul li a {
+.header nav ul li a {
     padding: 12px 20px;
     color: white;
     text-decoration: none;
@@ -80,7 +80,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
-nav ul li a:hover, nav ul li a:focus {
+.header nav ul li a:hover, nav ul li a:focus {
     background-color: #FFCB05;
     text-decoration: underline;
     color: #00274C;
