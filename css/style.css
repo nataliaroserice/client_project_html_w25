@@ -22,6 +22,8 @@
 * {
     text-wrap: wrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    overflow: auto;
 }
 
 /* Body Styling */
@@ -244,7 +246,7 @@ article {
 
 .how-to-use-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
     gap: 20px;
     justify-content: center;
     margin: 20px auto;
@@ -293,13 +295,19 @@ article {
     font-size: 1.1em;
 }
 
+/* CAPS Specific Styling */
+.upcoming-events ul li {
+    text-align: center;
+    line-height: 2;
+}
+
 /* Footer */
 footer {
     background-color: #00274C; /* Michigan Blue */
     color: white;
     text-align: center;
     padding: 20px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .footer-container {
@@ -331,6 +339,7 @@ a {
     text-decoration: underline;
 }
 
+/* Media Query */
 @media screen and (min-width: 800px){
     .resource-grid {
         display: grid;

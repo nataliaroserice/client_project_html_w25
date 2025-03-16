@@ -7,13 +7,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Center for the Education of Women+ (CEW+)</title>
 </head>
-<body>
 
-    <header id="header">
-        <a href = "#main" class="skip">Skip to Main Content</a>
-        <br>
-        <img src="images/ssp-logo.png" alt="UMSI Logo" class="logo">
-        <nav>
+<body>
+  <header id="header" class="header">
+    <a href = "#main" class="skip">Skip to Main Content</a>
+    <br>
+    <img src="images/ssp-logo.png" alt="UMSI Logo" class="logo">
+    <nav class="header-nav" aria-label="Main Navigation">
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "caps.html">CAPS</a></li>
@@ -22,43 +22,58 @@
             </ul>
         </nav>
         <h1>Center for the Education of Women+ (CEW+)</h1>
-
     </header>
+
     <main id="main">
-        <section>
-          <img src="images/cew+.png" alt="Two students wearing graduation caps">
-            <h2>About CEW+</h2>
-            <p>CEW+ supports the professional, educational, and personal development of students and community members, especially those in underserved populations. The Center's programs empower individuals to achieve their goals by addressing the unique challenges they face.</p>
-        </section>
+        <section class="hero">
+        <img src="images/cew+.png" alt="Two students wearing graduation caps">
+        <div class="hero-text">
+          <h2>About CEW+</h2>
+          <p>CEW+ supports the professional, educational, and personal development of students and community members, especially those in underserved populations. The Center's programs empower individuals to achieve their goals by addressing the unique challenges they face.</p>
+      </div>
+    </section>
 
-        <section>
-            <h2>Services Offered</h2>
-            <ul>
-                <li><img src="images/students_at_table.jpg" alt="4 students at a table, smiling" width="50"><strong>Scholarships and Fellowships:</strong> Financial support designed to help students overcome obstacles to education. CEW+ offers several funding opportunities for students facing financial barriers. <a href="https://www.cew.umich.edu/funding" target="_blank">Learn more and apply</a>.</li>
-          
+    <section class="services">
+      <h2>Services Offered</h2>
+      <div class="services-grid">
+          <article class="service-item">
+              <img src="images/students_at_table.jpg" alt="4 students at a table, smiling">
+              <h3>Scholarships and Fellowships</h3>
+              <p>Financial support for students overcoming educational obstacles. <a href="https://www.cew.umich.edu/funding">Learn more</a>.</p>
+          </article>
 
-                <li><img src="images/advising.jpg" alt="Two people at a table with a laptop between them" width="50"><strong>Counseling Services:</strong> Career and academic counseling tailored to your needs.</li>
+          <article class="service-item">
+              <img src="images/advising.jpg" alt="Two people at a table with a laptop">
+              <h3>Counseling Services</h3>
+              <p>Career and academic counseling tailored to your needs.</p>
+          </article>
 
-                
+          <article class="service-item">
+              <img src="images/cew+_event.jpg" alt="A speaker in front of a podium">
+              <h3>Workshops and Events</h3>
+              <p>Topics include leadership development, career planning, and financial wellness.</p>
+          </article>
 
-                <li><img src="images/cew+_event.jpg" alt="A speaker in front of a podium." width="50"><strong>Workshops and Events:</strong> Topics include leadership development, career planning, and financial wellness.</li>
+          <article class="service-item">
+              <img src="images/students_at_table.jpg" alt="Four students at a table, smiling">
+              <h3>Advocacy</h3>
+              <p>Initiatives and programs focused on equity, access, and inclusion.</p>
+          </article>
+      </div>
+  </section>
+  <br>
 
-                
+  <section class="how-to-use">
+    <h2>How to Access CEW+ Services</h2>
+    <div class="how-to-use-grid">
+        <div class="step-box">1. Visit CEW+ at 330 E. Liberty Street, Ann Arbor, MI.</div>
+        <div class="step-box">2. Schedule a counseling appointment at <a href="tel:+1734-764-6360">734-764-6360</a> or via the <a href="https://www.cew.umich.edu/counseling">online booking portal</a>.</div>
+        <div class="step-box">3. Register for workshops and events through the <a href="https://www.cew.umich.edu/events">Events Page</a>.</div>
+        <div class="step-box">4. Apply for financial support via <a href="https://www.cew.umich.edu/funding">Scholarships & Fellowships</a>.</div>
+    </div>
+</section>
 
-                <li><img src="images/students_at_table.jpg" alt="Four students at a table, smiling" width="50"><strong>Advocacy:</strong> Initiatives and programs focused on equity, access, and inclusion.</li>
-              </ul>
-        </section>
-        <br>
-        <section>
-            <h2>How to Access CEW+ Services</h2>
-            <ol>
-              <li>Visit the CEW+ office at 330 E. Liberty Street, Ann Arbor, MI 48104 during business hours.</li>
-              <li>Schedule a counseling appointment by calling <a href="tel:+1734-764-6360">734-764-6360</a> or using the <a href="https://www.cew.umich.edu/counseling" target="CEW+ Online Booking Portal">online booking portal</a>.</li>
-              <li>Register for workshops and events via their <a href="https://www.cew.umich.edu/events" target="CEW+ Events Page">Events Page</a>.</li>
-            </ol>
-          </section>
-
-          <section>
+          <section class="faq">
             <h2>Frequently Asked Questions</h2>
             <ul>
               <li><strong>Who is eligible for CEW+ services?</strong> All students, faculty, and staff, with a focus on supporting underserved populations.</li>
@@ -67,17 +82,26 @@
             </ul>
           </section>
 
-        <section>
+          <section class="upcoming-events">
             <h2>Upcoming Events</h2>
-            <ul>
-              <li><strong>Food Literacy for All Series:</strong> January 14th, 2025 - April 22, 2025, 6:30PM - 8PM, Virtual</li>
-              <li><strong>CEW+ Student & Family Basketball Outing 2025</strong> January 25th, 11AM - 2PM, Crisler Center Club, 333 E Stadium Blvd, Ann Arbor, MI 48109</li>
-              <li><strong>Financial Empowerment Series: Ultimate Financial Wellness</strong> January 28, 5 PM - 7 PM, CEW+, 330 E. Liberty Street, Ann Arbor, MI</li>
-            </ul>
-          </section>
+            <div class="services-grid">
+                <article class="service-item">
+                    <h3>Food Literacy for All Series</h3>
+                    <p>Jan 14 - Apr 22, 2025 | Virtual, 6:30PM - 8PM</p>
+                </article>
+    
+                <article class="service-item">
+                    <h3>CEW+ Student & Family Basketball Outing</h3>
+                    <p>Jan 25, 2025 | Crisler Center Club, 11AM - 2PM</p>
+                </article>
+    
+                <article class="service-item">
+                    <h3>Financial Empowerment Series</h3>
+                    <p>Jan 28, 2025 | CEW+, 5PM - 7PM</p>
+                </article>
+            </div>
+        </section>
     </main>
-    <!-- Written content taken & modified from ChatGPT 4o with the prompt, "write me a webpage of content that adequately summarizes need-to-know information about U of M CEW+ (Link: cew.umich.edu/). This content should be catered to graduate students seeking the site as a supportive resource.
-    Open AI. (2025). ChatGPT 4o (January 24th version) [Large language model]. -->
 
     <footer>
       <div class="footer-container">
@@ -99,3 +123,5 @@
   </footer>
 </body>
 </html>
+  <!-- Written content taken & modified from ChatGPT 4o with the prompt, "write me a webpage of content that adequately summarizes need-to-know information about U of M CEW+ (Link: cew.umich.edu/). This content should be catered to graduate students seeking the site as a supportive resource.
+    Open AI. (2025). ChatGPT 4o (January 24th version) [Large language model]. -->

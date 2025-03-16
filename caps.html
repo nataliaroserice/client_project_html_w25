@@ -7,14 +7,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Counseling and Psychological Services (CAPS)</title>
 </head>
-<body>
-<!-- Sourced from Jackie's provided code -->
 
-    <header id="header">
+<body>
+    <header id="header" class="header">
         <a href = "#main" class="skip">Skip to Main Content</a>
         <br>
         <img src="images/ssp-logo.png" alt="UMSI Logo" class="logo">
-        <nav>
+        <nav class="header-nav" aria-label="Main Navigation">
             <ul>
                 <li ><a href = "index.html">Home</a></li>
                 <li class="active"><a href = "caps.html">CAPS</a></li>
@@ -26,67 +25,99 @@
     </header>
 
     <main id="main">
+    
+        <section class="hero">
+            <img src="images/students_studying.jpeg" alt="Students studying in a great hall">
+            <div class="hero-text">
+                <h2>About CAPS</h2>
+                <br>
+                <p>CAPS provides mental health services tailored to help students navigate academic and personal challenges. Their mission is to promote student wellness and success through accessible, inclusive, and high-quality care.</p>
+            </div>
+        </section>
+        <br>
         
-        <section>
-            <img src="images/students_studying.jpeg" alt="Students studying in a great hall" width="400">
-            <h2>About CAPS</h2>
-            <p>CAPS provides mental health services tailored to help students navigate academic and personal challenges. Their mission is to promote student wellness and success through accessible, inclusive, and high-quality care.</p>
+        <section class="services">
+            <h2>Services Offered</h2>
+            <div class="services-grid">
+                <article class="service-item">
+                    <img src="images/session.jpg" alt="Student in counseling session">
+                    <h3>Individual Counseling</h3>
+                    <p>One-on-one support to address personal, academic, or mental health concerns.</p>
+                </article>
+
+                <article class="service-item">
+                    <img src="images/group_therapy_small.jpeg" alt="Students in a group therapy session">
+                    <h3>Group Therapy</h3>
+                    <p>Join peers in sessions focused on stress management, identity exploration, and shared challenges.</p>
+                </article>
+
+                <article class="service-item">
+                    <img src="images/workshop.png" alt="Students and lecturer in a classroom setting">
+                    <h3>Wellness Workshops</h3>
+                    <p>Build skills for mindfulness, self-care, and stress management.</p>
+                </article>
+
+                <article class="service-item">
+                    <img src="images/crisis_support_small.jpeg" alt="Illustrated hand holding phone with heart on the screen">
+                    <h3>Crisis Support</h3>
+                    <p>24/7 emergency mental health assistance for students in urgent need.</p>
+                </article>
+            </div>
         </section>
 
-        <section>
-    
-            <h2>Services Offered</h2>
-            <ul>
-                <li><img src="images/session.jpg" alt="Student in counseling session" width="50"><strong>Individual Counseling:</strong> One-on-one support to address personal, academic, or mental health concerns.
-                </li>
-                
+        <section class="how-to-use">
+            <h2>How to Access CAPS</h2>
+            <div class="how-to-use-grid">
+                <div class="step-box">1. Make an appointment with UMSI's counselor via email: <a href="mailto:evearitt@umed.umich.edu">evearitt@umed.umich.edu</a>.</div>
+                <div class="step-box">2. Visit the CAPS office in the Michigan Union (4th Floor) or call <a href="tel:+1734-764-8312">734-764-8312</a>.</div>
+                <div class="step-box">3. Log into the <a href="https://caps.umich.edu/article/scheduling-appointment">Student Portal</a> to book online.</div>
+                <div class="step-box">4. Attend drop-in hours for immediate support.</div>
+            </div>
+        </section>
 
-                <li><img src="images/group_therapy_small.jpeg" alt="Students in a group therapy session" width="50"><strong>Group Therapy:</strong> Join peers in sessions focused on stress management, identity exploration, or other shared challenges.</li>
-                
-                <li><img src="images/workshop.png" alt="Students and lecturer in a classroom setting" width="50"><strong>Wellness Workshops:</strong> Build skills for mindfulness, self-care, and handling stress effectively.</li>
-                
-                <li><img src="images/crisis_support_small.jpeg" alt="Illustrated hand holding phone with heart on the screen" width="50"><strong>Crisis Support:</strong> 24/7 emergency mental health assistance for students in urgent need.</li>
-            </ul>
-            </section>
+        <!-- Crisis Resources Section -->
+        <br>
+        <section class="crisis-resources">
+            <h2>Crisis Resources</h2>
+            <div class="services-grid">
+                <article class="service-item">
+                    <h3>CAPS Urgent Support</h3>
+                    <p>Available in-person or via phone, Monday-Friday, 10am - 4:30pm. Call <a href="tel:+1-734-764-8312">734-764-8312</a>.</p>
+                </article>
+
+                <article class="service-item">
+                    <h3>CAPS After-Hours Support</h3>
+                    <p>Available 24/7: Evenings, Weekends, and Holidays. Call <a href="tel:+1-734-764-8312">734-764-8312</a> and press 0.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
             <br>
+            <ul>
+                <li><strong>Is CAPS free?</strong> Yes, all services provided by CAPS are free for students.</li>
+                <li><strong>How long are counseling sessions?</strong> Sessions typically last 50 minutes.</li>
+                <li><strong>Can I get long-term counseling?</strong> CAPS focuses on short-term care but can provide referrals for ongoing support.</li>
+            </ul>
+        </section>
+        <br>
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="services-grid">
+                <article class="service-item">
+                <h3>Let's Talk: Starting Your Mental Health Journey</h3>
+                <p> Jan 30, 2025 | Trotter Multicultural Center, 3PM-4:30PM</p>
+                </article>
 
-            <section>
-                <h2>How to Access CAPS</h2>
-                <p>Scheduling an appointment is simple:</p>
-                <ol>
-                  <li>Make an appointment with UMSI's embedded counselor, Ashley Evearitt, Psy.D, by emailing Ashley directly at <a href="mailto:evearitt@umed.umich.edu" target="Email Ashley">evearitt@umed.umich.edu</a>.</li>
-                  <li>Visit the CAPS office in the Michigan Union (4th Floor) or call <a href="tel:+1734-764-8312">734-764-8312</a>.</li>
-                  <li>Log into the <a href="https://caps.umich.edu/article/scheduling-appointment" target="_blank">Student Portal</a> to book online.</li>
-                  <li>Attend one of our drop-in hours for immediate support.</li>
-                </ol>
-              </section>
+                <article class="service-item">
+                    <h3>Stress Management 101</h3>
+                    <p> Feb 15, 2025 | Virtual, 2PM-3PM</p>
+                    </article>
+            </div>
+        </section>
 
-            <section>
-                <h2>Crisis Resources</h2>
-                <p>If you or someone you know is experiencing a mental health emergency, please use the following resources:</p>
-                <ul>
-                    <li><strong>CAPS Urgent Support:</strong> Available in-person or via phone, Monday through Friday, 10am - 4:30pm. Call <a href="tel:+1-734-764-8312"> 734-764-8312.</a> </li>
-
-                    <li><strong>CAPS Phone Urgent Support After Hours:</strong> Available 24/7: Evenings, Weekends, Holidays). Call <a href="tel:+1-734-764-8312"> 734-764-8312.</a> Press 0.</li>
-                  </ul>
-            </section>
-
-            <section>
-                <h2>Frequently Asked Questions</h2>
-                <ul>
-                    <li><strong>Is CAPS free?</strong> Yes, all services provided by CAPS are free for students.</li>
-                    <li><strong>How long are counseling sessions?</strong> Sessions typically last 50 minutes.</li>
-                    <li><strong>Can I get long-term counseling?</strong> CAPS focuses on short-term care but can provide referrals for ongoing support.</li>
-                 </ul>
-            </section>
-
-            <section>
-                <h2>Upcoming Events</h2>
-                <ul>
-                    <li><strong>Let's Talk: Starting Your Mental Health Journey</strong> January 30th, 3 PM - 4 PM, Trotter Multicultural Center (Rm. 2011).</li>
-                    <li><strong>Stress Management 101</strong> February 15th, 2 PM - 3:30 PM, Virtual</li>
-                </ul>
-            </section>
+    </main>
             <!-- Written content taken & modified from ChatGPT 4o with the prompt, "write me a webpage of content that adequately summarizes need-to-know information about U of M CAPS (Link: https://caps.umich.edu/). This content should be catered to graduate students seeking the site as a supportive resource.
             Open AI. (2025). ChatGPT 4o (January 24th version) [Large language model]. -->
 
@@ -112,3 +143,6 @@
     </footer>
 </body>
 </html>
+
+   <!-- Written content taken & modified from ChatGPT 4o with the prompt, "write me a webpage of content that adequately summarizes need-to-know information about U of M's Maize and Blue Cupboard (Link: mbc.studentlife.umich.edu/). This content should be catered to graduate students seeking the site as a supportive resource.
+    Open AI. (2025). ChatGPT 4o (January 24th version) [Large language model]. -->
