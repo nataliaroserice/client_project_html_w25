@@ -106,9 +106,20 @@ article {
 
 /* Home Page */
 
+.hero-text {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+  }
+
+
 .hero-text p {
     font-size: 22px;
     text-align: center;
+    align-self: center;
+    margin: auto;
 }
 
 .hero img {
@@ -205,7 +216,7 @@ article {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-items: center;
-    margin: 20px auto;
+    margin: auto;
 }
 
 .service-item {
@@ -340,12 +351,186 @@ a {
     text-decoration: underline;
 }
 
-/* Media Query */
-/* @media screen and (min-width: 800px){
+
+/* 404 Styling */
+
+.not-found p {
+    text-align: center;
+}
+
+.button {
+    background-color: #FFCB05;
+    color: #00274C;
+    border: 2px solid #00274C;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 30px auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #FFC107;
+    color: #00274C;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+.square-container {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    top: 20px;
+    margin: auto;
+  }
+
+.square-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    align-content: center;
+    object-fit: fill;
+    /* justify-content: stretch; */
+  }
+
+  
+/* Media Query */ 
+@media screen and (min-width: 992px) {
+
+    /* General changes */
+    /* Broadened grids */
     .resource-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+    /* Adjusted the hero layout*/
+    .hero {
+        display: block;
+      }
+    
+    .hero img {
+        width: 100%;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+    
+
+    /* Expanded the grid layout */
+    .how-to-use-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
-} */
+
+    /* Adjusted FAQ text width  */
+    .faq ul {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    /* Made image larger on desktop */
+    .square-container {
+        width: 450px;
+        height: 450px;
+    }
+
+    .main {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 20px;
+        height: 100%;
+      }
+    
+    
+    .hero-text p {
+        font-size: 22px;
+        text-align: center;
+        margin: auto;
+    }
+
+    /* CAPS Specific Changes */
+    .hero img {
+        max-width: 30%;
+    }
+
+    .crisis-resources {
+        display: grid;
+        grid-template-columns: 1 fr 1fr;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .step-box {
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        place-items: center;
+        height: 100%;
+    }     
+
+    .logo {
+        width: 35%;
+    }
+    }
+
+    /* Challenge: Sign Up Form Styling!!!*/
+  .signup-form {
+    background-color: #E9ECEF;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .signup-form h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00274C;
+  }
+  
+  .signup-form p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #00274C;
+  }
+  
+  .signup-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #00274C;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+  }
+  
+  .signup-form button {
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .signup-form button:hover {
+    background-color: #FFC107;
+  }
