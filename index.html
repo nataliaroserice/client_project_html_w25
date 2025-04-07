@@ -92,25 +92,49 @@
           
     <footer>
         <div class="footer-container">
-            <p> &copy; 2025 University of Michigan - School of Information</p>
-            <br>
-            <p>Need support? Contact <a href="mailto:umsi.academicsuccess@umich.edu">umsi.academicsuccess@umich.edu</a></p>
+            <p>&copy;  <span id="year"></span> University of Michigan - School of Information</p>
+          <br>
+          <p>Need support? Contact <a href="mailto:umsi.academicsuccess@umich.edu">umsi.academicsuccess@umich.edu</a></p>
+          
+          <nav id="footer-nav" class="footer-nav" aria-label="Footer Navigation">
+              <a href="caps.html">CAPS</a>
+              <a href="maize_and_blue.html">Maize & Blue Cupboard</a>
+              <a href="cew+.html">CEW+</a>
+          </nav>
+
+          <p>
+              <a href="https://accessibility.umich.edu/">Accessibility</a> |
+              <a href="https://www.si.umich.edu/privacy-statement">Privacy Statement</a>
+          </p>
+
+          <!-- Challenge: Sign Up Form -->
+          <section class="signup-form">
+            <h3>Get UMSI Updates</h3>
+            <p>Sign up to receive resources, events, and support updates.</p>
+
+             <!-- Adding in the form elements -->
+            <!-- Code adapted from Week 10 Lecture Slides -->
+            <form action="https://formspree.io/f/mvgkvaav" method = "post">
+                <fieldset> 
+                    <label for="name">Name:</label>
+                    <input type="text" id = "name" name="name" required><br/>
+                    <label for="email">Email:</label>
+                    <input type="text" id = "email" name="email" required>
+                    </label><br/>
+                    <button type="submit">Sign Up</button>
+                </fieldset>
+            </form> 
+            </div>
             
-            <nav id="footer-nav" class="footer-nav" aria-label="Footer Navigation">
-                <a href="caps.html">CAPS</a>
-                <a href="maize_and_blue.html">Maize & Blue Cupboard</a>
-                <a href="cew+.html">CEW+</a>
-            </nav>
-    
-            <p>
-                <a href="https://accessibility.umich.edu/">Accessibility</a> | 
-                <a href="https://www.si.umich.edu/privacy-statement">Privacy Statement</a>
-            </p>
+          </section>
         </div>
+        
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
 
-   <!-- Written content taken & modified from ChatGPT 4o with the prompt, "write me a webpage of content that adequately summarizes need-to-know information about U of M's Maize and Blue Cupboard (Link: mbc.studentlife.umich.edu/). This content should be catered to graduate students seeking the site as a supportive resource.
-    Open AI. (2025). ChatGPT 4o (January 24th version) [Large language model]. -->
